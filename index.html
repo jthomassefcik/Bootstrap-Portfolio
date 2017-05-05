@@ -2,17 +2,35 @@
 <html lang="en-us">
 
 <head>
+  <script src="https://use.fontawesome.com/f01df14622.js"></script>
   <meta charset="UTF-8">
   <title>About | Your Name</title>
+  <!--
   <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/cyborg/bootstrap.min.css" rel="stylesheet" integrity="sha384-D9XILkoivXN+bcvB2kSOowkIvIcBbNdoDQvfBNsxYAIieZbx8/SI4NeUvrRGCpDi"
+    crossorigin="anonymous">
+
 </head>
 
 <body>
 
-  <header id="masthead">
-    <div class="container">
-      <a href="index.html" id="logo">Your Name</a>
+  <nav class="container navbar navbar-default">
+    <a class="col-xs-12 col-sm-6 navbar-header" href="index.html" id="logo">Thomas Sefcik</a>
+    <ol class="col-xs-12 col-sm-6 nav nav-tabs navbar-right">
+      <li role="presentation" class="active"><a href="index.html">About</a></li>
+      <li role="presentation" class="active"><a href="portfolio.html">Portfolio</a></li>
+      <li role="presentation" class="active"><a href="contact.html">Contact</a></li>
+    </ol>
+
+  </nav>
+
+
+  <!--
+  <header class="container"> <!--id="masthead"> 
+    <div class="col-sm-6">
+      <a href="index.html" class = "btn btn-large">Your Name</a> <!-- id="logo"
       <nav>
         <a href="index.html">About</a>
         <a href="portfolio.html">Portfolio</a>
@@ -20,19 +38,34 @@
       </nav>
     </div>
   </header>
-
-  <div id="main-container" class="container">
-    <section class="main-section">
+-->
+  <div class="container" id="main-container">
+    <section class="container col-xs-12 col-sm-6 col-md-6 col-lg-6">
       <h1>About Me</h1>
 
-      <img src="assets/images/cat.jpg" class="auth-image" alt="Your Name">
+      <img src="assets/images/cat.jpg" class="image-responsive pull-left col-xs-12 col-sm-12 col-md-12" alt="Your Name">
 
-      <p>Marshmallow jelly souffl&eacute; pastry biscuit gummi bears tootsie roll tootsie roll gingerbread. Cotton candy muffin gingerbread fruitcake. Sweet roll souffl&eacute; topping wafer croissant oat cake gummi&nbsp;bears.</p>
+      <p class="pull-left">Marshmallow jelly souffl&eacute; pastry biscuit gummi bears tootsie roll tootsie roll gingerbread. Cotton candy muffin
+        gingerbread fruitcake. Sweet roll souffl&eacute; topping wafer croissant oat cake gummi&nbsp;bears.</p>
 
-      <p>Jelly-o cheesecake dessert fruitcake ice cream brownie liquorice souffl&eacute;. Caramels biscuit gummi bears tiramisu chupa chups. Croissant macaroon cotton candy cake pudding.</p>
+      <p class="pull-left">Jelly-o cheesecake dessert fruitcake ice cream brownie liquorice souffl&eacute;. Caramels biscuit gummi bears tiramisu
+        chupa chups. Croissant macaroon cotton candy cake pudding.</p>
 
     </section>
 
+    <section class="container col-xs-12 col-sm-12 col-md-6 col-lg-6">
+      <h3 class="col-xs-12">Connect With Me</h3>
+      <div class="col-xs-12 btn-group" role="group" aria-label="Connect" id="connect">
+        <button type="button" class="col-xs-4 fa fa-github"> <a href="#" alt="GitHub"></a></button>
+        <!--<img src="assets/images/github-128.png"-->
+        <button type="button" class="col-xs-4 fa fa-linkedin"> <a href="#" alt="LinkedIn"></a></button>
+        <!--<img src="assets/images/linkedin-128.png"-->
+        <button type="button" class="col-xs-4 fa fa-stack-overflow" alt="Stack Overflow"><a href="#" alt="Stack Overflow"></a></button>
+        <!--<img src="assets/images/stackoverflow-128.png"-->
+      </div>
+    </section>
+  </div>
+  <!--
     <section class="sidebar">
       <div id="connect">
         <h2>Connect with Me</h2>
@@ -42,13 +75,17 @@
         <a href="#"><img src="assets/images/stackoverflow-128.png" class="social" alt="Stack Overflow" /></a>
       </div>
     </section>
-  </div>
+    -->
+
 
   <footer>
     <div class="container">
       Copyright &copy; 2016 Your Name
     </div>
   </footer>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

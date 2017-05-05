@@ -2,65 +2,73 @@
 <html lang="en-us">
 
 <head>
+  <script src="https://use.fontawesome.com/f01df14622.js"></script>
   <meta charset="UTF-8">
   <title>Contact | Your Name</title>
+  <!--
   <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/cyborg/bootstrap.min.css" rel="stylesheet" integrity="sha384-D9XILkoivXN+bcvB2kSOowkIvIcBbNdoDQvfBNsxYAIieZbx8/SI4NeUvrRGCpDi"
+    crossorigin="anonymous">
 </head>
 
 <body>
 
-  <header id="masthead">
-    <div class="container">
-      <a href="index.html" id="logo">Your Name</a>
-      <nav>
-        <a href="index.html">About</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </div>
-  </header>
+  <nav class="container navbar navbar-default">
+    <a class="col-xs-12 col-sm-6 navbar-header" href="index.html" id="logo"><button class="active btn btn-large">Thomas Sefcik</button></a>
+    <ol class="col-xs-12 col-sm-6 nav nav-tabs navbar-right">
+      <li role="presentation" class="active"><a href="index.html">About</a></li>
+      <li role="presentation" class="active"><a href="portfolio.html">Portfolio</a></li>
+      <li role="presentation" class="active"><a href="contact.html">Contact</a></li>
+    </ol>
 
-  <div id="main-container" class="container">
-    <section class="main-section">
-      <h1>Contact</h1>
+  </nav>
 
-      <form id="contact-form">
+
+  <div class="container" id="main-container">
+    <section class="container col-xs-12 col-sm-12 col-md-6 col-lg-6">
+      <h3>Contact</h3>
+      <form class="col-xs-12 input-group" id="contact-form">
         <ul>
           <li>
             <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="John Smith" required="required">
+            <input type="text" class="form-control" id="name" placeholder="John Smith">
           </li>
           <li>
             <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
+            <input type="text" class="form-control" placeholder="example@gmail.com">
           </li>
           <li>
             <label for="message">Message</label>
-            <textarea id="message" name="message" required="required"></textarea>
+            <textarea type="text" class="form-control" placeholder="Type your message here."></textarea>
           </li>
         </ul>
-        <input type="submit">
+        <input type="submit" class="btn col-xs-6 pull-right">
       </form>
-
     </section>
 
-    <section class="sidebar">
-      <div id="connect">
-        <h2>Connect with Me</h2>
-
-        <a href="#"><img src="assets/images/github-128.png" class="social" alt="GitHub" /></a>
-        <a href="#"><img src="assets/images/linkedin-128.png" class="social" alt="LinkedIn" /></a>
-        <a href="#"><img src="assets/images/stackoverflow-128.png" class="social" alt="Stack Overflow" /></a>
+    <section class="container col-xs-12 col-sm-12 col-md-6 col-lg-6">
+      <h3 class="col-xs-12">Connect With Me</h3>
+      <div class="col-xs-12 btn-group" role="group" aria-label="Connect" id="connect">
+        <button type="button" class="col-xs-4 fa fa-github"> <a href="#" alt="GitHub"></a></button>
+        <!--<img src="assets/images/github-128.png"-->
+        <button type="button" class="col-xs-4 fa fa-linkedin"> <a href="#" alt="LinkedIn"></a></button>
+        <!--<img src="assets/images/linkedin-128.png"-->
+        <button type="button" class="col-xs-4 fa fa-stack-overflow" alt="Stack Overflow"><a href="#" alt="Stack Overflow"></a></button>
+        <!--<img src="assets/images/stackoverflow-128.png"-->
       </div>
     </section>
   </div>
 
   <footer>
     <div class="container">
-      Copyright &copy; 2016 Your Name
+      <p class="text-center">Copyright &copy; 2016 Your Name</p>
     </div>
   </footer>
+
+  
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 
 </html>
